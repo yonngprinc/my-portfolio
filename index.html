@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALE PORTFOLIO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="banner">
+        <h1 class="logo"><span>yonng</span>Princ</h1>
+        <div class="banner-text">
+            <h1>Front-End Web Designer</h1>
+            <p>Hello, my name is Raji Olawale Mubarak and i'm a front end web designer. </p>
+        </div>
+        
+    </section>
+<div id="sideNav">
+   <nav>
+       <ul>
+           <li><a href="#banner">HOME</a></li>
+           <li><a href="#about">ABOUT</a></li>
+           <li><a href="#works">WORKS</a></li>
+           <li><a href="#footer">CONTACT</a></li>
+       </ul>
+   </nav>
+</div>
+<div id="menuBtn">
+    <img src="./images/menu.png" id="menu">
+</div>
+<!--about us-->
+<section id="about">
+    <div class="title-text">
+        <p>About Us</p>
+        <h1>Why Choose Us</h1>
+    </div>
+
+    <div class="about-area">
+        <div class="about-img">
+            <img src="./images/laptop2.jpg" alt="">
+        </div>
+    <div class="skills">
+        <p> Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.I design and develop web for startups , small and medium businesses</p>
+        <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+    
+    </div>
+    <!--works-->
+    <section id="works">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="work">
+            <div class="my-work">
+                <img src="./images/first-work.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="work-desc">
+                <h3>A gadget business web page</h3>
+                <hr>
+                <p>This is a web page showing products and specs. in this web page you can purchase your product by adding to cart.</p>
+            </div>
+        </div>
+        <div class="my-work">
+            <img src="./images/second-work.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="work-desc">
+            <h3>A business web page</h3>
+            <hr>
+            <p>This is a web page showing products and specs. in this web page you can purchase your product by adding to cart.</p>
+        </div>
+    </div>
+    <div class="my-work">
+        <img src="./images/third-work.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="work-desc">
+        <h3>Designing of house</h3>
+        <hr>
+        <p>This is a web page showing how a house is being designed using html and css</p>
+    </div>
+</div>
+<div class="my-work">
+    <img src="./images/laptop2.jpg" alt="">
+<div class="overlay"></div>
+<div class="work-desc">
+    <h3>This Is A Barbing Salon</h3>
+    <hr>
+    <p>This is a web page that is showing different kind of barbing styles and also contact testimonials of the barber</p>
+</div>
+</div>
+        </div>
+    </section>
+
+<!--footer section-->
+<section id="footer">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h1>Contact Us Today</h1>
+    </div>
+    <img src="./images/footer-img.png" class="footer-img">
+   
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Contact</h1>
+            <p> <i class="fa fa-whatsapp" ></i></h4>09095806009</p>
+            <p><i class="fa fa-phone" ></i>09095806009</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p>#25,faith street, ijeododo, lagos <i class="fa fa-map-marker" ></i></p>
+            <p>olawalemubarakraji@gmail.com<i class="fa fa-paper-plane" ></i></p>
+            
+        </div>
+    </div>
+
+<div class="social-links">
+    <i class="fa fa-facebook" ></i>
+    <i class="fa fa-instagram" ></i>
+    <i class="fa fa-twitter" ></i>
+    <i class="fa fa-youtube-play" ></i>
+    <p>copyright Raji OLawale Mubarak</p>
+</div>
+</section>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+       
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px" ) {
+            sideNav.style.right = "0";
+            menu.src = "./images/close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "./images/menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+</body>
+</html>
